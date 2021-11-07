@@ -1,6 +1,6 @@
 # BibCrunch
 BibCrunch is a project with the goal of finding reliable measures of text similarity. One such found
-is to use the, apparently now classic, if-idf method, combined with cosine similarity for the
+is to use the, apparently now classic, tf-idf method, combined with cosine similarity for the
 resulting vectors. This repository hosts the source code for a Flask website, that demostrates
 similarity measures achieved in this way. The similarities have been precalculated for a few
 hundred random Project Gutenberg books. The site itself can also calculate this measure
