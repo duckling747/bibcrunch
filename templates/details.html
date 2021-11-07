@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% endblock %}
+{% block content %}
+    <section class="info">
+        <h2>Details (non-technical)</h2>
+        <p>
+            The goal of project BibCrunch was to find out how book similarity could be
+            measured with comtemporary machine learning. This is mainly achieved by doing frequency
+            calculations for words, but also by teaching the computer about important patterns in
+            the text.
+        </p>
+        <p>
+            On the home page one can see the central findings from the project. Each <i>similar</i> field
+            tells the degree of similarity of two books, <i>a</i> and <i>b</i>. However, some additional important
+            results are not included on this web page, because of strict memory limitations on the
+            deployment machine. The page would sadly crash if those were included. You can read more from
+            the technical report of this project if you are interested (not included on the website). 
+        </p>
+    </section>
+    
+{% endblock %}

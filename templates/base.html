@@ -1,0 +1,58 @@
+<!doctype html>
+<title>BibCrunch</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+
+<nav>
+    <h1>BibCrunch </h1>
+    <a class="navigation" href="{{ url_for('index') }}">home</a>
+    <a class="navigation" href="{{ url_for('details') }}">project details (non-techical)</a>
+    <a class="navigation" href="/sitemap.xml">sitemap</a>
+</nav>
+
+<section class="msg">
+  <div class="bubble">
+
+  {% if get_flashed_messages() %}
+    {% for message in get_flashed_messages() %}
+      <p class="flash">{{ message }}</p>
+    {% endfor %}
+  {% else %}
+  <p>
+    Greetings, dear sir/madam/miss, and welcome. This is a demonstration page for the project BibCrunch. 
+    Here you can see a table for degrees of book similarity (1=exact copy, 0=completely different).
+    You can find these books at <a href="https://www.gutenberg.org/">Project Gutenberg</a> by their id. 
+    The books have been selected at random from all the English books available.
+    For example, the number at "id_a" and "0" is 16121. To find this book, paste the number into
+    the quick search bar at the Project Gutenberg website and hit <b>enter</b>.
+  </p>
+  <p>
+    Under the table (you'll have to scroll) there's a little box. You can send text files
+    through the box and the system will tell you how similar the two text files are dynamically.
+    Tip: if you have a personal computer and you're using a keyboard, you can usually press the
+    <b>end</b> key to quickly scroll to the bottom. 
+  </p>
+  {% endif %}
+</div>
+<div class="pinch"><span class="lft"></span><span class="rgt"></span> </div></div>
+<div class="girl_speak">
+  <img src="{{ url_for('static', filename='pinup.png') }}" alt="Pinup girl reading">
+</div>
+</section>
+
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+
+  {% block content %}{% endblock %}
+</section>
+<footer>
+  &copy; 2021 Project BibCrunch
+</footer>
+
+</body>

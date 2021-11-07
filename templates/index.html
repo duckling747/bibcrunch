@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% endblock %}
+{% block content %}
+    <section class="tables">
+    {% for table in tables %}
+        {{titles[loop.index]}}
+        {{ table|safe }}
+    {% endfor %}
+    </section>
+    <section class="box">
+        <h2>The box</h2>
+        <p>
+            Please, go ahead and upload two .txt files, and the system will report their similarity measure.
+        </p>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file1">
+            <input type="file" name="file2">
+            <input type="submit" value="Upload">
+        </form>
+    </section>
+
+{% endblock %}
