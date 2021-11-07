@@ -15,3 +15,8 @@ the requirements, found in the requirements.txt file.
 The project is deployed in Heroku at [https://bibcrunch.herokuapp.com/](https://bibcrunch.herokuapp.com/).
 Please note, that sending in too many requests too quickly can easily result in the app crashing, because
 the limitations for memory on the Heroku free plan are so strict. 
+
+## Further results
+During the project, other text similarity measures were also found. One such measure was achieved by
+training a siamese neural network, by using the already gathered cosine similarity data, mentioned
+above. You can view the script that was used to achieve this [here](https://github.com/duckling747/bibcrunch_train_script).
