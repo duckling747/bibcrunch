@@ -19,4 +19,4 @@ the limitations for memory on the Heroku free plan are so strict.
 ## Further results
 During the project, other text similarity measures were also found. One such measure was achieved by
 training a siamese neural network, by using the already gathered cosine similarity data, mentioned
-above. You can view the script that was used to achieve this [here](https://github.com/duckling747/bibcrunch_train_script).
+above. You can view the script that was used to achieve this, and the tf-idf data, [here](https://github.com/duckling747/bibcrunch_train_script).
