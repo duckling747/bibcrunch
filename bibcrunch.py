@@ -31,10 +31,10 @@ app.secret_key = '####### super secret key ######'
 app.config['SESSION_TYPE'] = 'memcached'
 ## CONFIGS END ##
 
-df_catalog = pd.read_csv("pg_catalog.csv.zip", delimiter=",", compression="infer")
+df_catalog = pd.read_csv("pg_catalog.csv.xz", delimiter=",", compression="infer")
 df_catalog.drop(columns=["Language", "Issued", "Type", "Subjects", "LoCC", "Bookshelves"], inplace=True)
 
-df_preprocessed = pd.read_pickle("preprocessed_data.pkl.zip", compression="infer")
+df_preprocessed = pd.read_pickle("preprocessed_data.pkl.xz", compression="infer")
 df_preprocessed.drop(columns=["a", "b"], inplace=True)
 df_preprocessed.sort_values(by=["similar"], ascending=False, inplace=True)
 df_preprocessed.reset_index(inplace=True, drop=True)
