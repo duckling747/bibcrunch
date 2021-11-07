@@ -8,7 +8,8 @@ dynamically, with the user sending in two text files.
 
 ## Running it
 Running the project should be familiar to anyone with experience in Flask and Python. For example, one
-simple way to do it in Debian 11 is: `FLASK_APP=bibcrunch.py flask run`.
+simple way to do it in Debian 11 is: `FLASK_APP=bibcrunch.py flask run`. Just make sure you have installed
+the requirements, found in the requirements.txt file.
 
 ## Heroku
 The project is deployed in Heroku at [https://bibcrunch.herokuapp.com/](https://bibcrunch.herokuapp.com/).
