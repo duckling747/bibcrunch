@@ -13,3 +13,5 @@ the requirements, found in the requirements.txt file.
 
 ## Heroku
 The project is deployed in Heroku at [https://bibcrunch.herokuapp.com/](https://bibcrunch.herokuapp.com/).
+Please note, that sending in too many request too quickly can easily result in the app crashing, because
+the limitations for memory on the Heroku free plan are so strict. 
